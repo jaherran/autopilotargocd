@@ -76,3 +76,16 @@ Create a new GitOps repository, or use an existing one.
 Supports creating the entire directory structure under any path the user requires.
 When adding applications from a public repo, allow committing as either a kustomization that references the public repo, or as a "flat" manifest file containing all the required resources.
 Use a different cluster from the one Argo-CD is running on, as a default cluster for a Project, or a target cluster for a specific Application.# autopilotargocd
+
+
+
+### To install you need to create a repository ###
+echo "# autopilotargocd" >> README.md             
+git init
+git config --local user.name "jaherran"
+git config --local user.email "jaherran@yahoo.com"
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:jaherran/autopilotargocd.git
+git push -u origin main # autopilotargocd
